@@ -59,6 +59,11 @@
 ## 4. Phân tích 50 case khó
 
 *Model nào tụt nhiều nhất, ở nhóm case nào? Nêu 2 case cụ thể và cơ chế khiến model sai.*
+F1 50 case khó với F1 test thường -> BoW + LogReg tụt nhiều nhất -> LR chỉ nhận biết được các features có sẵn, chưa gặp các ca tricky.
+Khó nhất với BoW là né từ khoá, vì nó chủ yếu học trên Vocab -> né là qua.
+Khó nhát với Embedding/LLM là spam giọng tự nhiên, vì ngữ nghĩa của tin gần với tin không spam
+LLM không bị qua mặt bởi prompt injection.
+Bộ synthesis thiếu tự nhiên + bias cố tình -> nên dùng để kiểm thử chứ không nên làm mục tiêu đsanh giá chính
 
 ## 5. Thử thách cá nhân
 
